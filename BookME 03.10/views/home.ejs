@@ -88,22 +88,20 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+    <!-- Wrapper for slides-->
     <div class="carousel-inner">
-      <img src=<"https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/NammaVeetuPillai.jpg?itok=2RKZrpCA"> class=
-        <% if (index === 0) {%>
-        <%= "active" %>
 
-      <!--  <% for(var i=0; i < movies.length; i++) { %>-->
-        <div class="item <%= i==0 ? 'active' : ''%>"
-            <div class="hero-wrap js-fullheight"
-                 style="background-image: url(<%= movies[i].image%>);"
-                 data-stellar-background-ratio="0.5">
+<% for(var i=0; i < movies.length; i++){ %>
+
+  <div class="item <%= i==0 ? 'active' : ''%>"
+             <div class="hero-wrap js-fullheight"
+                  style="background-image: url(<%= movies[i].image%>);"
+                  data-stellar-background-ratio="0.5">
 
                 <div class="overlay"></div>
 
                 <div class="container">
-                    >
+
                     <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
                          data-scrollax-parent="true">
 
@@ -124,9 +122,8 @@
                                         Book Now</h2></a></center>
                         </div>
                         <div style="position:absolute; margin-left:300px; margin-top:0px"
-                        <abbr title="Trailer" style="font-size:18px; color:;"> <a
-                                    href=<%= movies[i].trailer%>
-                                    class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+                        <abbr title="Trailer" style="font-size:18px; color:;">
+                          <a href=""class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
 
 
                             <span
@@ -147,9 +144,9 @@
         </div>
     </div>
 </div>
-        <% } %>
-
-
+<%}%>
+<!--
+  -->
 
 
 
@@ -157,7 +154,6 @@
 
 
     <!--<div class="item">
-
 
     <div class="hero-wrap js-fullheight" style="background-image: url('images/kappan.jpg');"
          data-stellar-background-ratio="0.5">
@@ -242,7 +238,7 @@
             <div class="project-wrap">
 
                 <a href="booking3" class="img"
-                   style="background-image: url(<%= movies[i].image%>);"></a>
+                   style="background-image: url();"></a>
 
                 <div class="text p-4">
 
@@ -250,7 +246,9 @@
 
                     <span class="days">Jaffna</span>
 
-                    <h3><a href="booking3"><%= movies[i].name%></a></h3>
+                    <h3><a href="booking3" ></a></h3>
+
+
 
                     <p class="location"><span class="ion-ios-map"></span> Action</p>
 
@@ -275,7 +273,7 @@
 
             <div class="project-wrap">
 
-                <a href="booking2" class="img" style="background-image: url(<%= movies[ii].image%>);"></a>
+                <a href="booking2" class="img" style="background-image: url();"></a>
 
                 <div class="text p-4">
 
@@ -283,7 +281,7 @@
 
                     <span class="days">Jaffna</span>
 
-                    <h3><a href="booking2"><%= movies[ii].name%></a></h3>
+                    <h3><a href="booking2"></a></h3>
 
                     <p class="location"><span class="ion-ios-map"></span> Action &#38; Romance</p>
 
