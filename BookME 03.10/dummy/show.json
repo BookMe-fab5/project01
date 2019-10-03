@@ -1,14 +1,30 @@
 [
   {
-    "id": "",
-    "key": "",
-    "showTime": "",
+    "id": "String",
+    "key": "show01",
+    "showTime": "Date",
     "screen": {
-        "name": "Shalu",
+        "name": "Sharu",
         "key": "ss_complex",
-        "odcSeats": [[]],
-        "numberOfODCSeats": {},
-        "availableODCSeats": {}
+        "odcSeats": [
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+        ],
+        "numberOfODCSeats": "Number",
+        "availableODCSeats": "Number"
     },
     "movie" : {
         "key" : "NVP",
@@ -21,13 +37,28 @@
     }
   },
   {
-    "id": "",
-    "key": "",
-    "showTime": "",
+    "id": "String",
+    "key": "show02",
+    "showTime": "Date",
     "screen": {
-        "name": "Sharu",
+        "name": "Shalu",
         "key": "ss_complex",
-        "odcSeats": [[]],
+        "odcSeats": [
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+          ["s", "s", "s", "s", "p", "s", "s" "s", "s", "s", "s", "s", "s", "s", "s", "s"],
+
+        ],
         "numberOfODCSeats": {},
         "availableODCSeats": {}
     },

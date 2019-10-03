@@ -4,17 +4,17 @@
     "name" : "String",
     "email" : "String"
 },
-"bookingReference" : {},
-"time" : {},
-"numberOfFull" : {},
-"numberOfHalf" : {},
+"bookingReference" : "String",
+"time" : "Date",
+"numberOfFull" : "Number",
+"numberOfHalf" : "Number",
 "movie" : {
     "name": "Namma veettu pillai",
     "description": "sfreutyio",
     "cast" : "Sivakarthikeyan,Anu Emmanuel",
     "image":"https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/NammaVeetuPillai.jpg?itok=2RKZrpCA",
     "trailer": "https://www.youtube.com/watch?v=59_Fl_e46IU",
-    "releaseDate" : {},
+    "releaseDate" : "Date",
     "language" : "Tamil",
     "genre" : "Action"
 }}
