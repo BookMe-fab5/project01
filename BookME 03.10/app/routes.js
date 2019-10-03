@@ -65,7 +65,7 @@ app.get('/contact', function(req, res) {
 
 
 
-   const Userrr = require("./models/book.js");
+   const Userrr = require("./models/booking.js");
     app.post("/booking1", function(req, res) {
            /*req.body {
                username: "mongod",
@@ -86,7 +86,7 @@ app.get('/contact', function(req, res) {
   });
 
 
-  const Userr = require("./models/post.js");
+  const Userr = require("./models/user.js");
    app.post("/posting", function(req, res) {
           /*req.body {
               username: "mongod",

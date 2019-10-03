@@ -90,8 +90,11 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
+      <img src=<"https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/NammaVeetuPillai.jpg?itok=2RKZrpCA"> class=
+        <% if (index === 0) {%>
+        <%= "active" %>
 
-        <% for(var i=0; i < movies.length; i++) { %>
+      <!--  <% for(var i=0; i < movies.length; i++) { %>-->
         <div class="item <%= i==0 ? 'active' : ''%>"
             <div class="hero-wrap js-fullheight"
                  style="background-image: url(<%= movies[i].image%>);"

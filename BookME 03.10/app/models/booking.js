@@ -4,9 +4,9 @@ var bcrypt = require('bcrypt-nodejs');
 
 var bookingSchema = mongoose.Schema({
 
-    id : Schema.Types.ObjectId,
+    id : "",
     user : {
-        id : Schema.Types.ObjectId,
+        id : "",
         name : String,
         email : String
     },
