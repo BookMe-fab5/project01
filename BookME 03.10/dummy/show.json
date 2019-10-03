@@ -1,0 +1,44 @@
+[
+  {
+    "id": "",
+    "key": "",
+    "showTime": "",
+    "screen": {
+        "name": "Shalu",
+        "key": "ss_complex",
+        "odcSeats": [[]],
+        "numberOfODCSeats": {},
+        "availableODCSeats": {}
+    },
+    "movie" : {
+        "key" : "NVP",
+        "name": "Namma veetu pillai",
+        "cast" : [],
+        "image": "https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/NammaVeetuPillai.jpg?itok=2RKZrpCA",
+        "trailer": "https://www.youtube.com/watch?v=59_Fl_e46IU",
+        "language" : "Tamil",
+        "genre" : "Action"
+    }
+  },
+  {
+    "id": "",
+    "key": "",
+    "showTime": "",
+    "screen": {
+        "name": "Sharu",
+        "key": "ss_complex",
+        "odcSeats": [[]],
+        "numberOfODCSeats": {},
+        "availableODCSeats": {}
+    },
+    "movie" : {
+        "key" : "kappan",
+        "name": "Kappan",
+        "cast" : "Suriya,Sayyeshaa,Arya,Mohanlal",
+        "image": "https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/NammaVeetuPillai.jpg?itok=2RKZrpCA",
+        "trailer": "https://www.youtube.com/watch?v=59_Fl_e46IU",
+        "language" : "Tamil",
+        "genre" : "Action"
+    }
+  }
+]

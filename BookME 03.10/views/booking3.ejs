@@ -1,0 +1,959 @@
+<!doctype html>
+<html>
+<head>
+    <title>BookME</title>
+    <link rel="icon" href="bookME.jpg">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <noscript><link rel="stylesheet" href="noscript.css" ></noscript>
+  <title>BookME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+  <style>
+
+
+ #Username
+ {
+   border:none;
+   border-bottom:1px solid;
+ }
+
+ .screen
+ {
+   width:100%;
+   height:20px;
+   background:#4388cc;
+   color:#fff;
+   line-height:30px;
+   font-size:15px;
+ }
+
+ .smallBox::before
+ {
+   content:".";
+   width:15px;
+   height:15px;
+   float:left;
+   margin-right:10px;
+ }
+ .greenBox::before
+ {
+   content:"";
+   background:Green;
+ }
+ .redBox::before
+ {
+   content:"";
+   background:Red;
+ }
+ .emptyBox::before
+ {
+   content="";
+   box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+     background-color:#ccc;
+ }
+
+ .seats
+ {
+   border:1px solid red;background:yellow;
+ }
+
+
+
+ .seatGap
+ {
+   width:50px;
+ }
+
+ .seatVGap
+ {
+   height:50px;
+ }
+
+ table
+ {
+   text-align:center;
+ }
+
+
+ .Displaytable
+ {
+   text-align:center;
+ }
+ .Displaytable td, .Displaytable th {
+     border: 2px solid;
+     text-align: left;
+ }
+
+ textarea
+ {
+   border:none;
+   background:transparent;
+ }
+
+
+
+ input[type=checkbox] {
+     width:0px;
+     margin-right:18px;
+ }
+
+ input[type=checkbox]:before {
+     content: "";
+     width: 25px;
+     height: 20px;
+     display: inline-block;
+     vertical-align:middle;
+     text-align: center;
+     box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+     background-color:#ccc;
+ }
+
+ input[type=checkbox]:checked:before {
+     background-color:Green;
+     font-size: 25px;
+ }
+ ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: d4e1ec;
+    }    li {
+      float: left;
+    }    li a {
+      display: block;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }    li a:hover {
+      color: #5B2C6F;
+      background-color: d4e1ec;
+    }
+    .def{
+      color: #03F0FC
+ ;
+      font-style:normal;
+      font-size: 50px;
+      font-weight: 800;
+      float: left;
+    }
+ img{float: left;}
+ .fef{
+   color:white;
+ }
+ .pop{
+   width: 600px;
+   background-color: white;
+   border: 1px solid gray;
+
+   margin: 100px auto;
+   overflow: hidden;
+   padding: 25px;
+   color: #4c4e56;
+}
+textarea{
+  float:inherit;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#startselect {background-color: white; border: 1px solid black; center center / cover no-repeat;}
+#rapseat { background-image: url(""); center center / cover no-repeat;}
+#bookseat { background-image: url(""); center center / cover no-repeat;}
+
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+.bgimgbook{
+  background-image: url("https://www.barraques.cat/pngfile/big/156-1568711_wallpapers-hd-1080p-free-download-for-windows-1080p.jpg");
+}
+
+.filterDiv {
+  float: left;
+  line-height: 80px;
+  display: none;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #ABEBC6;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #AED6F1 ;
+  color: white;
+}
+ </style>
+
+
+
+
+
+
+
+
+<script>
+
+
+  $(function() {
+    $('a[href*=#]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+  });
+
+  function onLoaderFunc()
+  {
+    $(".seatStructure *").prop("disabled", true);
+    $(".displayerBoxes *").prop("disabled", true);
+  }
+  function calcu(){
+    var seatf = [];
+    var seath = [];
+    seatf.push ($("#FullNumseats").val());
+    seath.push ($("#HalfNumseats").val());
+    var x = ( seatf*1 )+( seath*1) ;
+    //var x =  ($("#FullNumseats").val())+($("#HalfNumseats").val());
+    $("#Numseats").val(x);
+    var x = document.getElementById("fname");
+    document.getElementById("fname").addEventListener("change", myFunction);
+  }
+  function takeData()
+  {
+
+
+    if (( $("#dob").val().length == 0 ) || ( $("#Numseats").val().length == 0)  )
+
+    {
+    alert("Please Enter your Show time and Number of Seats");
+    }
+    else
+    {
+      $(".inputForm *").prop("disabled", true);
+      $(".seatStructure *").prop("disabled", false);
+document.getElementById("notification").innerHTML =
+"<b style='font-size:20px;color:blue;' >Please Select your Seats NOW!</b>";
+    }
+  }
+
+
+  function updateTextArea() {
+
+    if ($("input:checked").length == ($("#Numseats").val()))
+      {
+
+        $(".seatStructure *").prop("disabled", true);
+       var allDateVals = [];
+       var allShowVals = [];
+       var allNameVals = [];
+       var allNumberVals = [];
+       var allSeatsVals = [];
+       var fprice = [];
+       var hprice = [];
+       //Storing in Array
+       allNameVals.push($("#theatre").val());
+       allDateVals.push($("#dob").val());
+       allShowVals.push($("#Username").val());
+       allNumberVals.push($("#Numseats").val());
+       fprice.push($("#FullNumseats").val());
+       hprice.push($("#HalfNumseats").val());
+       $('#seatsBlock :checked').each(function() {
+         allSeatsVals.push($(this).val());
+
+       });
+
+       //Displaying
+      $('#dateDisplay').val(allDateVals+",   "+allShowVals);
+       $('#nameDisplay').val("Namma veettu pillai Movie "+ allNameVals);
+       $('#NumberDisplay').val("Adults "+fprice+", Children "+ hprice);
+       $('#seatsDisplay').val(allSeatsVals);
+       $('#Price').val(fprice*538 + hprice*338 + " LKR");
+
+      }
+    else
+      {
+        alert("Please select " + ($("#Numseats").val()) + " seats")
+      }
+    }
+
+
+  function myFunction() {
+    alert($("input:checked").length);
+  }
+
+
+  function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+          }
+      }
+      return "";
+  }
+
+
+
+  $(":checkbox").click(function() {
+    if ($("input:checked").length == ($("#Numseats").val())) {
+      $(":checkbox").prop('disabled', true);
+      $(':checked').prop('disabled', false);
+    }
+    else
+      {
+        $(":checkbox").prop('disabled', false);
+      }
+  });
+
+//filter
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("button");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+
+  </script>
+
+
+        </head>
+        <body  onload="onLoaderFunc()"  style="background-color:rgb(240, 240, 240); ">
+          <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+              <a class="navbar-brand" href="home">BookME<span></span></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+              </button>
+
+              <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active"><a href="home" class="nav-link" style="font-weight:; font-size:15px;">Home</a></li>
+                 <li class="nav-item"><a href="about" class="nav-link" style="font-weight:; font-size:15px;">About</a></li>
+
+                 <li class="nav-item"><a href="contact" class="nav-link" style="font-weight:; font-size:15px;">Contact</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- END nav-->
+
+          <div class="hero-wrap js-fullheight" style="background-image: url('https://image.freepik.com/vettori-gratuito/sfondo-del-cinema-con-oggetti-realistici-3d_1441-1004.jpg'); height:'2%';" data-stellar-background-ratio="0.5">
+
+            <br><br><br>
+
+            <div class="container"><br><br><br>
+              <center><h1 style="color: white; font-family: Baskerville; font-weight: bold;">
+                Select your Date,Show time and Number of seats</h1></center>
+              <section id="startselect" >
+
+
+      <span class="fef"  style="color:blue; margin-left:20px; color:LightSlateGray ; font-size:25px; font-weight:bold;">
+         Namma veettu pillai Movie 2D Full 500.00 LKR / Half 300.00 LKR</span>
+
+
+         <center>
+           <div class="row">
+             <Div class="col-sm-4">
+             <span class="fef"  style=" color:black; font-size:20px; font-weight:bold;">  Theatre :</span>
+           <br>  <button id="theatre" class="button button1"  onclick="filterSelection('Action')">SALU Cinema</button>
+              <button id="theatre" class="button button2" onclick="filterSelection('sella')">SARU Cinema</button>
+
+           </div>
+              <div class="col-sm-4">
+    <span class="fef"  style="color:black; width:30%; font-size:20px; font-weight:bold;">  Date :</span>
+
+
+ <span style="color:black;"></span><br>
+ <select class="form-control filterDiv Action" id="dob" name="n" style="margin-left:"20px" width:30%; redious:1;">
+ <option disabled >Fri 27</option>
+ <option  >Tue 01</option>
+ <option  >Wed 02</option>
+ </select>
+ <select class="form-control filterDiv sella" id="dob" name="n" style="margin-left:"20px" width:30%; redious:1;">
+ <option  >Wed 02</option>
+ <option  >Thu 03</option>
+ </select>
+           </div>
+
+
+
+<!--<select class="form-control" id="dob" name="n" style="margin-left:"20px" width:30%; redious:1;">
+ <option id="demo" ></option>
+ <option id="pemo" ></option>
+ <option id="memo" ></option>
+<option id="cemo" ></option>
+ <script>
+ var d = new Date();
+ var e = d+1;
+ var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  document.getElementById("demo").innerHTML = months[d.getMonth()]+" "+d.getDate();
+  document.getElementById("pemo").innerHTML = months[d.getMonth()]+" "+d.getDate();
+  document.getElementById("memo").innerHTML = months[d.getMonth()]+" "+d.getDate();
+  document.getElementById("cemo").innerHTML = months[d.getMonth()]+" "+d.getDate();
+ </script>
+</select>
+</div>-->
+
+             <div class="col-sm-4">
+             <div >
+            <span class="fef"  style="color:black; font-size:20px; font-weight:bold;">  Time :</span>
+              <select class="form-control" id="Username" name="n" style="width:50%; redious:1;">
+               <option  >10.30 A.M</option>
+               <option  >01.30 P.M</option>
+               <option  >04.30 P.M</option>
+               <option  disabled>07.30 P.M</option>
+                <option disabled>10.30 P.M</option>
+             </select>
+
+
+
+              </div>
+            </div><br><br><br><br>
+
+            <div class="col-sm-4">
+          <span class="fef" style="color:black; weight: 70%; width: 80%; font-size:20px; font-weight:bold;">Full :</span><br> <input type="number" id="FullNumseats" required style="width:30%;">
+            <br/><br/>
+          </div>
+
+              <div class="col-sm-4">
+<span class="fef"  style="color:black; weight: 70%; width: 80%; font-size:20px; font-weight:bold;">Half :</span><br> <input type="number" id="HalfNumseats" required style="width:30%;">
+          <!--<button onclick="calcu()">ok</button>   <br/><br/>-->
+            </div><br><br>
+            <div class="col-sm-4">
+              <span class="fef"  style="color:black; weight: 70%; width: 80%; font-size:20px; font-weight:bold;">Total Tickets :</span><br>
+               <input class="form-control"  id="Numseats" name="" style="width:60%; height:30px;">  <br/><br/>
+          </div>-->
+
+
+          </div>
+
+
+
+      <a href="#bookseat"><button ontouchstart="calcu()" onmouseover="calcu()" onclick="takeData()"  style="width:30%; font-size:24px; font-weight:bold;" class="btn btn-warning btn-lg">Start Selecting </button></a>
+      </a></center><br><br>
+     </center>
+      </section>
+
+
+
+
+                  <p class="caps" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"></p>
+                  <h1 data-scrollax="properties: { translateY: '40%', opacity: 1.6 }"></h1>
+                </div>
+                  </div></div>
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="seatStructure">
+
+          <section id="bookseat" >
+          <center>
+
+          <table id="seatsBlock" class="fef">
+
+           <p ></p>
+            <tr >
+
+              <td colspan="14">
+              <br><h2 id="notification" ></h2>
+
+                <img src="https://www.blsi.com/images/Dundee_Theater_APMA_FilmStreams_008__LG.jpg" width="500" height="100">
+             <br><!--<h3 style='color: black; font-family: Baskerville; font-weight: bold;'>  All eyes are this way please!</h3>
+             --></td>
+              <td rowspan="20">
+                <span class="fef">
+                <div class="smallBox greenBox"  style="margin-left:50px; color:black; font-size:18px; font-weight:none;">Selected Seat</div> <br/>
+                <div class="smallBox redBox"  style="margin-left:50px; color:black; font-size:18px; font-weight:none;">Reserved Seat</div><br/>
+                <div class="smallBox emptyBox"  style="margin-left:50px; color:black; font-size:18px; font-weight:none;">Empty Seat</div><br/></span>
+              </td>
+
+              <br>
+            </tr>
+
+            <tr class="fef" style="color:black;">
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td></td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+          </tr>
+
+          <tr >
+              <td style="color:black;">A &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="A1" style="background-image:url(https://i.pinimg.com/736x/b3/40/d2/b340d210ee609aff26584c6211eff853.jpg);"></td>
+              <td><input type="checkbox" class="seats" value="A2"></td>
+              <td><input type="checkbox" class="seats" value="A3"></td>
+              <td><input type="checkbox" class="seats" value="A4"></td>
+              <td><input type="checkbox" class="seats" value="A5"></td>
+              <td class="seatGap"></td>
+              <td><input type="checkbox" class="seats" value="A6"></td>
+              <td><input type="checkbox" class="seats" value="A7"></td>
+              <td><input type="checkbox" class="seats" value="A8"></td>
+              <td><input type="checkbox" class="seats" value="A9"></td>
+              <td><input type="checkbox" class="seats" value="A10"></td>
+              <td><input type="checkbox" class="seats" value="A11"></td>
+              <td><input type="checkbox" class="seats" value="A12"></td>
+            </tr>
+
+            <tr>
+              <td style="color:black;">B &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="B1"></td>
+              <td><input type="checkbox" class="seats" value="B2"></td>
+              <td><input type="checkbox" class="seats" value="B3"></td>
+              <td><input type="checkbox" class="seats" value="B4"></td>
+              <td><input type="checkbox" class="seats" value="B5"></td>
+              <td></td>
+              <td><input type="checkbox" class="seats" value="B6"></td>
+              <td><input type="checkbox" class="seats" value="B7"></td>
+              <td><input type="checkbox" class="seats" value="B8"></td>
+              <td><input type="checkbox" class="seats" value="B9"></td>
+              <td><input type="checkbox" class="seats" value="B10"></td>
+              <td><input type="checkbox" class="seats" value="B11"></td>
+              <td><input type="checkbox" class="seats" value="B12"></td>
+            </tr>
+
+            <tr>
+              <td style="color:black;">C &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="C1"></td>
+              <td><input type="checkbox" class="seats" value="C2"></td>
+              <td><input type="checkbox" class="seats" value="C3"></td>
+              <td><input type="checkbox" class="seats" value="C4"></td>
+              <td><input type="checkbox" class="seats" value="C5"></td>
+              <td></td>
+              <td><input type="checkbox" class="seats" value="C6"></td>
+              <td><input type="checkbox" class="seats" value="C7"></td>
+              <td><input type="checkbox" class="seats" value="C8"></td>
+              <td><input type="checkbox" class="seats" value="C9"></td>
+              <td><input type="checkbox" class="seats" value="C10"></td>
+              <td><input type="checkbox" class="seats" value="C11"></td>
+              <td><input type="checkbox" class="seats" value="C12"></td>
+          </tr>
+
+          <tr>
+              <td style="color:black;">D &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="D1"></td>
+              <td><input type="checkbox" class="seats" value="D2"></td>
+              <td><input type="checkbox" class="seats" value="D3"></td>
+              <td><input type="checkbox" class="seats" value="D4"></td>
+              <td><input type="checkbox" class="seats" value="D5"></td>
+              <td></td>
+              <td><input type="checkbox" class="seats" value="D6"></td>
+              <td><input type="checkbox" class="seats" value="D7"></td>
+              <td><input type="checkbox" class="seats" value="D8"></td>
+              <td><input type="checkbox" class="seats" value="D9"></td>
+              <td><input type="checkbox" class="seats" value="D10"></td>
+              <td><input type="checkbox" class="seats" value="D11"></td>
+              <td><input type="checkbox" class="seats" value="D12"></td>
+          </tr>
+
+          <tr>
+              <td style="color:black;">E &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="E1"></td>
+              <td><input type="checkbox" class="seats" value="E2"></td>
+              <td><input type="checkbox" class="seats" value="E3"></td>
+              <td><input type="checkbox" class="seats" value="E4"></td>
+              <td><input type="checkbox" class="seats" value="E5"></td>
+              <td></td>
+              <td><input type="checkbox" class="seats" value="E6"></td>
+              <td><input type="checkbox" class="seats" value="E7"></td>
+              <td><input type="checkbox" class="seats" value="E8"></td>
+              <td><input type="checkbox" class="seats" value="E9"></td>
+              <td><input type="checkbox" class="seats" value="E10"></td>
+              <td><input type="checkbox" class="seats" value="E11"></td>
+              <td><input type="checkbox" class="seats" value="E12"></td>
+          </tr>
+
+          <tr class="seatVGap"></tr>
+
+          <tr>
+              <td style="color:black;">F &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="F1"></td>
+              <td><input type="checkbox" class="seats" value="F2"></td>
+              <td><input type="checkbox" class="seats" value="F3"></td>
+              <td><input type="checkbox" class="seats" value="F4"></td>
+              <td><input type="checkbox" class="seats" value="F5"></td>
+              <td></td>
+              <td><input type="checkbox" class="seats" value="F6"></td>
+              <td><input type="checkbox" class="seats" value="F7"></td>
+              <td><input type="checkbox" class="seats" value="F8"></td>
+              <td><input type="checkbox" class="seats" value="F9"></td>
+              <td><input type="checkbox" class="seats" value="F10"></td>
+              <td><input type="checkbox" class="seats" value="F11"></td>
+              <td><input type="checkbox" class="seats" value="F12"></td>
+          </tr>
+
+          <tr>
+              <td style="color:black;">G &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="G1"></td>
+              <td><input type="checkbox" class="seats" value="G2"></td>
+              <td><input type="checkbox" class="seats" value="G3"></td>
+              <td><input type="checkbox" class="seats" value="G4"></td>
+              <td><input type="checkbox" class="seats" value="G5"></td>
+              <td></td>
+              <td><input type="checkbox" class="seats" value="G6"></td>
+              <td><input type="checkbox" class="seats" value="G7"></td>
+              <td><input type="checkbox" class="seats" value="G8"></td>
+              <td><input type="checkbox" class="seats" value="G9"></td>
+              <td><input type="checkbox" class="seats" value="G10"></td>
+              <td><input type="checkbox" class="seats" value="G11"></td>
+              <td><input type="checkbox" class="seats" value="G12"></td>
+          </tr>
+
+          <tr>
+              <td style="color:black;">H &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="H1"></td>
+              <td><input type="checkbox" class="seats" value="H2"></td>
+              <td><input type="checkbox" class="seats" value="H3"></td>
+              <td><input type="checkbox" class="seats" value="H4"></td>
+              <td><input type="checkbox" class="seats" value="H5"></td>
+              <td></td>
+              <td><input type="checkbox" class="seats" value="H6"></td>
+              <td><input type="checkbox" class="seats" value="H7"></td>
+              <td><input type="checkbox" class="seats" value="H8"></td>
+              <td><input type="checkbox" class="seats" value="H9"></td>
+              <td><input type="checkbox" class="seats" value="H10"></td>
+              <td><input type="checkbox" class="seats" value="H11"></td>
+              <td><input type="checkbox" class="seats" value="H12"></td>
+          </tr>
+
+          <tr>
+              <td style="color:black;">I &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="I1"></td>
+              <td><input type="checkbox" class="seats" value="I2"></td>
+              <td><input type="checkbox" class="seats" value="I3"></td>
+              <td><input type="checkbox" class="seats" value="I4"></td>
+              <td><input type="checkbox" class="seats" value="I5"></td>
+              <td></td>
+              <td><input type="checkbox" class="seats" value="I6"></td>
+              <td><input type="checkbox" class="seats" value="I7"></td>
+              <td><input type="checkbox" class="seats" value="I8"></td>
+              <td><input type="checkbox" class="seats" value="I9"></td>
+              <td><input type="checkbox" class="seats" value="I10"></td>
+              <td><input type="checkbox" class="seats" value="I11"></td>
+              <td><input type="checkbox" class="seats" value="I12"></td>
+          </tr>
+
+          <tr>
+              <td style="color:black;">J &nbsp;</td>
+              <td><input type="checkbox" class="seats" value="J1"></td>
+              <td><input type="checkbox" class="seats" value="J2"></td>
+              <td><input type="checkbox" class="seats" value="J3"></td>
+              <td><input type="checkbox" class="seats" value="J4"></td>
+              <td><input type="checkbox" class="seats" value="J5"></td>
+              <td></td>
+              <td><input type="checkbox" class="seats" value="J6"></td>
+              <td><input type="checkbox" class="seats" value="J7"></td>
+              <td><input type="checkbox" class="seats" value="J8"></td>
+              <td><input type="checkbox" class="seats" value="J9"></td>
+              <td><input type="checkbox" class="seats" value="J10"></td>
+              <td><input type="checkbox" class="seats" value="J11"></td>
+              <td><input type="checkbox" class="seats" value="J12"></td>
+          </tr>
+
+
+          </table>
+
+          <br/><a href="#rapseat"><button onclick="updateTextArea()" class="btn btn-warning btn-lg" style="margin-right:1px; width:30%; font-size:24px; font-weight:bold;" >Confirm Selection</button></a>
+         <!--<script src="app/public/js/seat.js"></script><script src="app/index.js"></script>-->
+
+          </center>
+        </span>
+        </section>
+          </div>
+
+
+
+
+            <div class="container">
+
+
+
+            </div>
+
+            </div>
+          </div>
+          <section id="rapseat" style="background-color:#464573;">
+          <center><br>
+            <div class="pop" style="font-family:Arial; font-weight:bold; font-size:30px;">
+          <form action="/booking1" method="post"  >
+            <div class="form-group">
+              <h2 style="font-weight:bold; font-size:28px;"> Booking Details</h2>
+              <span class="fef" style="color:black; font-size:15px; font-weight:; float:left; font-size:18px;">Movie & Theatre : </span>
+            &nbsp;  <input class="form-control" id="nameDisplay" name="Theatre" style="width:60%; height:30px; font-size:16px;">
+          </div>
+
+              <div class="form-group" >
+
+              <span class="fef" style="color:black; font-size:15px; font-weight: ; float:left; font-size:18px;">Show Date & Time : </span>
+            &nbsp;  <input class="form-control" id="dateDisplay" name="Show_time" style="width:60%; height:30px; font-size:16px; ">
+          </div>
+              <div class="form-group">
+                  <span class="fef" style="color:black; font-size:15px; font-weight:; float:left; font-size:18px;">Ticket  Quantity :</span>
+                  &nbsp;<input class="form-control" id="NumberDisplay" name="No_of_Tickets" style="width:60%; height:30px; font-size:16px;"></textarea>
+              </div>
+              <div class="form-group" >
+                  <span class="fef" style="color:black; font-size:15px; font-weight:; float:left; font-size:18px;">Seats :</span><br>
+                  <input class="form-control" id="seatsDisplay" name="Seats" style="width:60%; height:30px; font-size:16px;">
+              </div>
+              <div class="form-group">
+                  <span class="fef" style="color:black; font-size:15px; font-weight:; float:left; font-size:18px;">Price :</span><br>
+                  <textarea class="form-control" id="Price" name="Price" style="width:60%; height:30px; font-size:16px;">
+
+                </textarea>
+
+
+              </div>
+              <br>
+      <button class="btn btn-warning btn-lg" style="width:50%; font-size:16px; font-weight:bold;" >Pay Now</button>
+            <!-- <a href="index">credit</a>-->
+             </form>
+
+           </div>
+
+
+
+          </div>
+          <br>  <br>
+        </center></section>
+          </div>
+        </div>
+
+
+
+
+
+                    <footer class=" bg-bottom" style="background-color: black; height:; width:;" >
+                    <div class="container">
+                      <div class="row mb-5">
+                        <div class="col-md">
+                          <div class="ftco-footer-widget mb-4"><br>
+                            <h2 class="ftco-heading-2" style="color:white;">BookME</h2><br>
+                            <p> BookME is an online entertainment portal tied up with leading theater SScomplex to provide
+                            </p>
+                            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                              <li class="ftco-animate" style="color:white;"><a href="#"><span class="icon-twitter" ></span></a></li>
+                              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md">
+                          <div class="ftco-footer-widget mb-4"><br>
+                            <h2 class="ftco-heading-2" style="color:white;">Have a Questions?</h2><br>
+                            <div class="block-23 mb-3">
+                              <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Mathani road, puloly North,Jaffna.</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">0776489021</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">fab5creater.com</span></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+
+                          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">fab5</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+            </div>
+
+
+
+                    <!-- loader -->
+                    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+                    <script src="js/jquery.min.js"></script>
+                    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+                    <script src="js/popper.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/jquery.easing.1.3.js"></script>
+                    <script src="js/jquery.waypoints.min.js"></script>
+                    <script src="js/jquery.stellar.min.js"></script>
+                    <script src="js/owl.carousel.min.js"></script>
+                    <script src="js/jquery.magnific-popup.min.js"></script>
+                    <script src="js/aos.js"></script>
+                    <script src="js/jquery.animateNumber.min.js"></script>
+                    <script src="js/bootstrap-datepicker.js"></script>
+                    <script src="js/scrollax.min.js"></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+                    <script src="js/google-map.js"></script>
+                    <script src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+        </html>

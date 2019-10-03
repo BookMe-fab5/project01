@@ -1,0 +1,24 @@
+[
+  {
+    "key":"NVP",
+    "name" : "Namma veeddu pillai",
+    "description": "Comedy / Action",
+    "cast":"Sivakarthikeyan,Anu Emmanuel",
+    "image":"https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/NammaVeetuPillai.jpg?itok=2RKZrpCA",
+    "trailer":"https://www.youtube.com/watch?v=59_Fl_e46IU",
+    "releaseDate": {},
+    "language" : "Tamil",
+    "genre" : "Action"
+  },
+  {
+    "key":"kappan",
+    "name" : "Kappan",
+    "description": "Comedy / Action",
+    "cast":"Suriya,Sayyeshaa,Arya,Mohanlal",
+    "image":"https://www.telegraphstar.com/wp-content/uploads/2019/09/kaappaan-movie-review-780x390.jpg",
+    "trailer":"https://www.youtube.com/watch?v=j_eduSGN3RQ",
+    "releaseDate": {},
+    "language" : "Tamil",
+    "genre" : "Action"
+  }
+]
